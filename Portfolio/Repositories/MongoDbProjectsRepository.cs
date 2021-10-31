@@ -25,6 +25,11 @@ namespace Portfolio.Repositories
             await projectsCollection.InsertOneAsync(project);
         }
 
+        public async Task DeleteAllProjectsAsync()
+        {
+            await projectsCollection.DeleteManyAsync(p => true);
+        }
+
         public async Task DeleteProjectAsync(Guid id)
         {
             var filter = filterBuilder.Eq(project => project.Id, id);
