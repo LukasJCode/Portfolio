@@ -106,6 +106,5 @@ namespace Portfolio.Controllers
             await repository.DeleteAllProjectsAsync();
             return NoContent();
         }
-
     }
 }
