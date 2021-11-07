@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Portfolio.Models;
-using Portfolio.Repositories;
+using Portfolio.Api.Models;
+using Portfolio.Api.Repositories;
 
-namespace Portfolio.Controllers
+namespace Portfolio.Api.Controllers
 {
     // GET /projects
     [ApiController]

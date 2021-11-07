@@ -15,10 +15,10 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
-using Portfolio.Repositories;
-using Portfolio.Settings;
+using Portfolio.Api.Repositories;
+using Portfolio.Api.Settings;
 
-namespace Portfolio
+namespace Portfolio.Api
 {
     public class Startup
     {

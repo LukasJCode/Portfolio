@@ -1,6 +1,6 @@
 using System;
 
-namespace Portfolio.Models
+namespace Portfolio.Api.Models
 {
     public class Project
     {

@@ -1,6 +1,6 @@
-using Portfolio.Models;
+using Portfolio.Api.Models;
 
-namespace Portfolio
+namespace Portfolio.Api
 {
     public static class Extensions
     {

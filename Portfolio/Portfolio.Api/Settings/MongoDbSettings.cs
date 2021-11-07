@@ -1,4 +1,4 @@
-namespace Portfolio.Settings
+namespace Portfolio.Api.Settings
 {
     public class MongoDbSettings
     {

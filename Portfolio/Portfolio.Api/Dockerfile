@@ -6,12 +6,12 @@ ENV ASPNETCORE_URLS=http://+:80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-focal AS build
 WORKDIR /src
-COPY ["Portfolio.csproj", "./"]
-RUN dotnet restore "Portfolio.csproj"
+COPY ["Portfolio.Api.csproj", "./"]
+RUN dotnet restore "Portfolio.Api.csproj"
 COPY . .
-RUN dotnet publish "Portfolio.csproj" -c Release -o /app/publish
+RUN dotnet publish "Portfolio.Api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "Portfolio.dll"]
+ENTRYPOINT ["dotnet", "Portfolio.Api.dll"]

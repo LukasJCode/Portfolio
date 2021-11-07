@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Portfolio.Models;
+using Portfolio.Api.Models;
 
-namespace Portfolio.Repositories
+namespace Portfolio.Api.Repositories
 {
     public interface IProjectsRepository
     {
