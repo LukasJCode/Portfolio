@@ -7,6 +7,27 @@
         <app-project-details-form></app-project-details-form>
     </div>
     <div class="col-md-6">
-        list of projects
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>Project Title</th>
+                    <th>About</th>
+                    <th>Implementation</th>
+                    <th>Conclusion</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of service.list">
+                    <td (click)="populateForm(p)">{{p.title}}</td>
+                    <td (click)="populateForm(p)">{{p.about}}</td>
+                    <td (click)="populateForm(p)">{{p.implementation}}</td>
+                    <td (click)="populateForm(p)">{{p.conclusion}}</td>
+                    <td>
+                        <i (click)="deleteProject(p.id)" class="far fa-trash-alt fa-lg text-danger"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
